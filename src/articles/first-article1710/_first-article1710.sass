@@ -1,0 +1,22 @@
+.first-article1710
+
+    &__title
+        margin-bottom: 60px
+
+    &__description
+        --description-gap: 139
+        margin-bottom: 61px
+        display: flex
+        column-gap: calc(var(--description-gap) / 1024 * 100vw)
+
+        & > *
+            width: calc(50% - 139px)
+            color: #4F4F4F
+            font-size: 20px
+            font-weight: 500
+            line-height: 130%
+
+    &__button.blue-button
+        display: block
+        width: max-content
+        margin-inline: auto

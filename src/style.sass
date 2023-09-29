@@ -1,0 +1,50 @@
+@import "@var"
+@import "sass/_fonts.css"
+@import "sass/_mixins"
+@import "components/**/*.sass"
+@import "articles/**/*.sass"
+
+:root
+    --index: calc(1vw + 1vh)
+    --header-height: 112px
+    --clr-blue: #025EA1
+
+*,*::after,*::before
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    font-family: 'Graphik LCG', sans-serif
+    // width: 100vw
+    // overflow-x: hidden
+
+h1,h2,h3, h4, h5
+    font-family: 'TT Firs Neue'
+
+img, video
+    max-width: 100%
+
+.container
+    padding-inline: 1rem
+    width: min(1720px + 2rem, 100% - 2rem )
+    margin-inline: auto
+
+.title
+    color: #000
+    text-align: center
+    font-size: 50px
+    font-weight: 500
+    margin-bottom: 60px
+
+.blue-button
+    color: #fff
+    background: var(--clr-blue)
+    border-radius: 33px
+    border: none
+    padding: 1vmin 2vmin
+    margin: 0 0.5rem 0 0
+    white-space: nowrap
+    text-decoration: none
+.block
+    margin-bottom: 130px
