@@ -6,16 +6,19 @@
 
     &__block
         position: relative
-        height: 912px
+        height: 100dvh
 
         & > img
             width: 100%
             height: 100%
+            object-fit: cover
+            object-position: center
 
         & > div
-            padding: 70px
+            padding: r1920(70)
 
         &:hover > .popular1410__front
+            pointer-events: all
             backdrop-filter: blur(4px)
             & > :is(.popular1410__text, a.blue-button)
                 opacity: 1
@@ -33,7 +36,7 @@
             transition: opacity var(--opacity-time)
 
     &__caption
-        font-size: 40px
+        font-size: fz1920(20,40)
         font-weight: 500
         text-transform: uppercase
         margin-bottom: 20px

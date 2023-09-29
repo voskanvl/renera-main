@@ -1,0 +1,63 @@
+.universal1527
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-inline: r1920(100)
+    background: linear-gradient(180deg, #D9D9D9 0.01%, #AAA 0.96%, #F2F2F2 100%)
+    img
+        width: 353px
+
+    &__front
+        position: absolute
+        inset: 0
+        background: #0000
+
+        &:hover
+            backdrop-filter: blur(4px)
+            .universal1527__front-container
+                height: 50%
+            .universal1527__text
+                grid-template-rows: 1fr
+            .blue-button.universal1527__button
+                grid-template-rows: 1fr
+                padding: 1vmin 2vmin
+
+    &__front-container
+        position: absolute
+        inset: 0
+        z-index: 1
+        width: 50%
+        height: 20%
+        margin: auto
+        transition: height 0.4s
+
+    &__caption
+        text-align: center
+        font-size: fz1920(20,40)
+        font-weight: 500
+        text-transform: uppercase
+        margin-bottom: 20px
+
+    &__text
+        text-align: center
+        font-size: fz1920(12,20)
+        margin-bottom: 30px
+        display: grid
+        grid-template-rows: 0fr
+        transition: grid-template-rows 0.4s
+
+        & > div
+            overflow-y: hidden
+
+    &__button.blue-button
+        display: block
+        width: max-content
+        margin-inline: auto
+        display: grid
+        padding: 0
+        grid-template-rows: 0fr
+        transition: grid-template-rows 0.4s
+
+        & > div
+            overflow-y: hidden

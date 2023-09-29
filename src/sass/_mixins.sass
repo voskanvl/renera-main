@@ -1,2 +1,19 @@
-=fz($start,$end,$from)
-    font-size: 20px
+@function fz($start,$from,$end)
+    @return clamp(#{$start}px,#{$end} / #{$from} * 100vw,#{$end}px)
+
+@function fz1920($start,$end)
+    @return fz($start,1920,$end)
+
+@function fz1440($start,$end)
+    @return fz($start,1440,$end)
+
+@function fz1024($start,$end)
+    @return fz($start,1024,$end)
+
+@function fz768($start,$end)
+    @return fz($start,768,$end)
+
+@function r($x, $res)
+    @return calc($x / $res * 100vw)
+@function r1920($x)
+    @return r($x, 1920)
