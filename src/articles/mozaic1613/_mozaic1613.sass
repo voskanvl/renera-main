@@ -1,0 +1,44 @@
+.mozaic1613
+    display: block
+
+    &__body
+        color: #fff
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-template-rows: repeat(3, 1fr)
+        gap: r1920(40)
+        grid-template-areas: "first first second third" "fourth fivth seventh seventh" "fourth sixth seventh seventh"
+
+        & > *:not(:first-child, :last-child)
+            padding: r1920(70)
+
+    #mozaic-first
+        grid-area: first
+
+    #mozaic-second
+        grid-area: second
+
+    #mozaic-third
+        grid-area: third
+
+    #mozaic-fourth
+        grid-area: fourth
+
+    #mozaic-fivth
+        grid-area: fivth
+
+    #mozaic-sixth
+        grid-area: sixth
+
+    #mozaic-seventh
+        grid-area: seventh
+
+    &__item
+        &--first
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+                object-position: center
+        &--last
+            padding: r1920(50)
