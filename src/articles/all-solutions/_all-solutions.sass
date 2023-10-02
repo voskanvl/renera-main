@@ -1,0 +1,65 @@
+.all-solutions
+
+    &__body
+        position: relative
+
+    &__select
+        display: block
+        text-decoration: none
+        width: 60vw
+
+        @media (width <= 1024px)
+            width: 100%
+
+        & + &
+            margin-top: 15px
+
+        &[active="true"]
+            .all-solutions__item
+                color: var(--clr-blue)
+                font-size: 30px
+                font-weight: 700
+
+            .all-solutions__button
+                background: var(--clr-blue)
+                color: #fff
+                border-color: transparent
+
+            img
+                opacity: 1
+
+        img
+            position: absolute
+            opacity: 0
+            transition: opacity 0.4s
+            top: 0
+            right: 0
+            bottom: 0
+            margin-block: auto
+            width: 30vw
+
+            @media (width <= 1024px)
+                display: none
+
+    &__item
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 30px 40px
+        background: #F5F5F5
+        color: #4F4F4F
+        font-size: fz1920(18,30)
+        font-weight: 500
+
+    &__caption
+        flex-basis: 70%
+
+    &__button
+        color: #4F4F4F
+        font-size: 20px
+        font-weight: 600
+        text-transform: uppercase
+        padding: 18px 40px
+        border-radius: 30px
+        border: 1px solid #4F4F4F
+        transition: 0.4s

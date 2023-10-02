@@ -1,2 +1,22 @@
 .mozaic-block
-    display: block
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    color: inherit
+    text-decoration: none
+
+    &__title
+        font-size: fz1920(21,30)
+        font-weight: 700
+        margin-bottom: 20px
+
+    &__text
+        font-size: fz1920(14,20)
+        font-weight: 500
+        line-height: 130%
+
+    &__footer
+        display: flex
+        align-items: center
+        justify-content: space-between

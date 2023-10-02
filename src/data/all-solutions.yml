@@ -1,0 +1,11 @@
+allSolutions:
+  - caption: Тяговые аккумуляторы для легкового электротранспорта
+    img: "images/all-solutions/car.png"
+  - caption: Тяговые батареи для коммерческого электротранспорта
+    img: "images/all-solutions/car.png"
+  - caption: Система оперативного постоянного тока (СОПТ)
+    img: "images/all-solutions/sopt.png"
+  - caption: СНЭ (системы накопления электроэнергии) и ИБП ( источники бесперебойного питания)
+    img: "images/all-solutions/sopt.png"
+  - caption: Тяговые батареи для специальной техники (карьерной, погрузочной и пр.)
+    img: "images/all-solutions/sopt.png"
