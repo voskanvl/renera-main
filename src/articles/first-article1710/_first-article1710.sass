@@ -17,6 +17,13 @@
             font-weight: 500
             line-height: 130%
 
+        @media (width <= 768px)
+            flex-direction: column
+            row-gap: 2rem
+
+            & > *
+                width: auto
+
     &__button.blue-button
         display: block
         width: max-content

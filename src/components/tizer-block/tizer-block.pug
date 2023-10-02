@@ -1,4 +1,6 @@
 mixin tizer-block(val,idx)
     .tizer-block 
-        p= val 
-        p= idx
+        video(src=val.video, muted, autoplay, loop) 
+        .tizer-block__body.container 
+            h2.tizer-block__title.title= val.text
+            a.tizer-block__button.any-button(href="") ПЕРЕЙТИ К РЕШЕНИЯМ

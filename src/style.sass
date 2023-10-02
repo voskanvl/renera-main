@@ -37,9 +37,7 @@ img, video
     font-weight: 500
     margin-bottom: 60px
 
-.blue-button
-    color: #fff
-    background: var(--clr-blue)
+.any-button
     border-radius: 33px
     border: none
     padding: 1vmin 2vmin
@@ -47,5 +45,10 @@ img, video
     white-space: nowrap
     text-decoration: none
     cursor: pointer
+
+.blue-button
+    @extend .any-button
+    color: #fff
+    background: var(--clr-blue)
 .block
     margin-bottom: 130px

@@ -1,2 +1,23 @@
 .tizer-block
-    display: block
+    position: relative
+    &__body
+        position: absolute
+        inset: 0
+        margin-block: auto
+        height: 50%
+        z-index: 1
+
+        .tizer-block__title
+            color: #fff
+            text-align: left
+            max-width: 1214px
+            font-size: fz1920(30,70)
+            margin-bottom: r1920(60)
+
+    video
+        filter: brightness(0.5)
+        width: 100%
+
+    &__button
+        background: #fff
+        color: var(--clr-blue)
