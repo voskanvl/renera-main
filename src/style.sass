@@ -33,7 +33,7 @@ img, video
 .title
     color: #000
     text-align: center
-    font-size: 50px
+    font-size: fz1920(30,50)
     font-weight: 500
     margin-bottom: 60px
 
@@ -51,4 +51,20 @@ img, video
     color: #fff
     background: var(--clr-blue)
 .block
-    margin-bottom: 130px
+    margin-bottom: min(130px, 13vh)
+
+:is(.splide, .splide__track, .splide__list, .splide__slide)
+    height: 100%
+
+button.splide__arrow--prev
+    left: 0.5em
+    background: #0000 url("images/icons/arrow-left.png") no-repeat
+    border-radius: 0
+    svg
+        display: none
+button.splide__arrow--next
+    right: 0.5em
+    background: #0000 url("images/icons/arrow-right.png") no-repeat
+    border-radius: 0
+    svg
+        display: none

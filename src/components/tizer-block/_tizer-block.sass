@@ -1,10 +1,11 @@
 .tizer-block
     position: relative
+    height: 100%
     &__body
         position: absolute
         inset: 0
         margin-block: auto
-        height: 50%
+        height: min-content
         z-index: 1
 
         .tizer-block__title
@@ -17,6 +18,9 @@
     video
         filter: brightness(0.5)
         width: 100%
+        height: 100%
+        object-fit: cover
+        object-position: center
 
     &__button
         background: #fff

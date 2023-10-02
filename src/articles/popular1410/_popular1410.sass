@@ -4,9 +4,15 @@
         display: grid
         grid-template-columns: repeat(2, 50%)
 
+        @media (width <= 768px)
+            grid-template-columns: 100%
+
     &__block
         position: relative
         height: 100dvh
+
+        @media (width <= 768px)
+            height: 50dvh
 
         & > img
             width: 100%
@@ -17,7 +23,7 @@
         & > div
             padding: r1920(70)
 
-        &:hover > .popular1410__front
+        &[active] > .popular1410__front
             pointer-events: all
             backdrop-filter: blur(4px)
             & > :is(.popular1410__text, a.blue-button)
@@ -36,13 +42,13 @@
             transition: opacity var(--opacity-time)
 
     &__caption
-        font-size: fz1920(20,40)
+        font-size: fz1920(16,40)
         font-weight: 500
         text-transform: uppercase
-        margin-bottom: 20px
+        margin-bottom: min(20px, 2vh)
 
     &__text
-        font-size: 20px
+        font-size: fz1920(12,20)
         margin-bottom: 48px
         opacity: 0
         transition: opacity var(--opacity-time)
