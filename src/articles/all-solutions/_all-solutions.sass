@@ -16,7 +16,7 @@
         & + &
             margin-top: 15px
 
-        &[active="true"]
+        &:hover
             .all-solutions__item
                 color: var(--clr-blue)
                 font-weight: 700
@@ -38,6 +38,7 @@
             bottom: 0
             margin-block: auto
             width: 30vw
+            pointer-events: none
 
             @media (width <= 1024px)
                 display: none
