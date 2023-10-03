@@ -25,6 +25,9 @@ h1,h2,h3, h4, h5
 img, video
     max-width: 100%
 
+main.main
+    margin-top: var(--header-height)
+
 .container
     padding-inline: 1rem
     width: min(1720px + 2rem, 100% - 2rem )
@@ -45,6 +48,7 @@ img, video
     white-space: nowrap
     text-decoration: none
     cursor: pointer
+    text-transform: uppercase
 
 .blue-button
     @extend .any-button
@@ -70,3 +74,11 @@ button.splide__arrow--next
     border-radius: 0
     svg
         display: none
+
+#submit_your_application
+    border-radius: 100px
+    min-width: 200px
+    padding-inline: 1em
+    border: 1px solid #fff
+    display: grid
+    place-items: center
