@@ -1,8 +1,10 @@
 .popular1410
     --opacity-time: 0.4s
     &__grid
+        --block-gap: 2px
         display: grid
-        grid-template-columns: repeat(2, 50%)
+        grid-template-columns: repeat(2, calc(50% - var(--block-gap) / 2))
+        column-gap: var(--block-gap)
 
         @media (width <= 768px)
             grid-template-columns: 100%
@@ -23,9 +25,9 @@
         & > div
             padding: r1920(70)
 
-        &[active] > .popular1410__front
+        &:hover > .popular1410__front
             pointer-events: all
-            backdrop-filter: blur(4px)
+            // backdrop-filter: blur(4px)
             & > :is(.popular1410__text, a.blue-button)
                 opacity: 1
 

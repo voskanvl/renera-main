@@ -3,8 +3,8 @@
         h2.title.all-solutions__title ВСЕ РЕШЕНИЯ РЭНЕРА
         .all-solutions__body 
             each i,idx in allSolutions 
-                a.all-solutions__select(href="") 
+                .all-solutions__select(active=idx===0?"true":"false") 
                     .all-solutions__item
                         .all-solutions__caption !{i.caption} 
-                        .all-solutions__button(role="button") ПЕРЕЙТИ 
+                        a.all-solutions__button(href="") ПЕРЕЙТИ 
                     img(src= i.img, alt="")

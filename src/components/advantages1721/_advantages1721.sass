@@ -2,7 +2,10 @@
     display: flex
     flex-wrap: wrap
     align-items: flex-start
-    justify-content: center
+    justify-content: space-between
     margin-bottom: 78px
     color: var(--clr-blue)
-    gap: 20px
+    gap: 40px 20px
+
+    @media (width <= 1024px)
+        justify-content: center

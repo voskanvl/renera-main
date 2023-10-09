@@ -9,13 +9,18 @@
     img
         width: min(353px, 20vw)
 
+    @media (width <= 580px)
+        flex-direction: column
+        min-height: 400px
+        padding-block: 1rem
+
     &__front
         position: absolute
         inset: 0
         background: #0000
 
         &:hover
-            backdrop-filter: blur(4px)
+            // backdrop-filter: blur(4px)
             .universal1527__front-container
                 height: 50%
             .universal1527__text

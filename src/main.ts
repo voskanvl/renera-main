@@ -1,14 +1,14 @@
 import "./style.sass"
 import "@splidejs/splide/dist/css/splide.min.css"
 import splides from "./ts/splides"
-// import allSolutions from "./articles/all-solutions/all-solutions"
+import allSolutions from "./articles/all-solutions/all-solutions"
 import popular from "./articles/popular1410/popular"
 import noBarba from "./noBarba"
 import videoSlider from "./ts/videoSlider"
 
 noBarba()
 const slider = splides()
-// allSolutions()
+allSolutions()
 popular()
 videoSlider(slider)
 

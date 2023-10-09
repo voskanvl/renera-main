@@ -9,7 +9,7 @@
         gap: r1920(40)
         grid-template-areas: "first first second third" "fourth fivth seventh seventh" "fourth sixth seventh seventh"
 
-        & > *:not(:first-child, :last-child)
+        & > *:not(:first-child)
             padding: r1920(70)
 
         @media (width <= 1024px)
@@ -19,12 +19,12 @@
 
         @media (width <= 768px)
             grid-template-columns: repeat(2, 1fr)
-            grid-template-rows: repeat(6, 1fr)
+            grid-template-rows: repeat(6, min-content)
             grid-template-areas: "first first" "second third" "fourth fivth" "fourth sixth" "seventh seventh" "seventh seventh"
 
         @media (width <= 500px)
             grid-template-columns: 100%
-            grid-template-rows: repeat(8, 1fr)
+            grid-template-rows: repeat(8, min-content)
             grid-template-areas: "first" "second" "third" "fourth" "fourth" "fivth" "sixth" "seventh"
 
     #mozaic-first
@@ -40,6 +40,10 @@
         grid-area: fourth
         background: url("images/mozaic/4.jpg") no-repeat
         background-size: cover
+        color: #000
+
+        @media (width <= 768px)
+            min-height: 500px
 
     #mozaic-fivth
         grid-area: fivth
@@ -49,6 +53,9 @@
 
     #mozaic-seventh
         grid-area: seventh
+
+        svg
+            flex: 0 0 29px
 
     &__item
         color: inherit
@@ -69,3 +76,8 @@
                 display: flex
                 justify-content: space-between
                 align-items: center
+                column-gap: 2rem
+
+            p
+                font-size: fz1920(12,20)
+                margin-bottom: 1rem

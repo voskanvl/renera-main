@@ -1,6 +1,18 @@
 .tizer-block
     position: relative
-    height: 100%
+    height: calc(100vh - var(--header-height))
+
+    &--black
+
+        & > img
+            filter: none
+
+        h2.tizer-block__title
+            color: #000
+
+        p.tizer-block__text
+            color: #000
+
     &__body
         position: absolute
         inset: 0
@@ -12,16 +24,57 @@
             color: #fff
             text-align: left
             max-width: 1214px
-            font-size: fz1920(30,70)
+            font-size: fz1920(22,70)
             margin-bottom: r1920(60)
 
-    video
+    :where(video, img)
         filter: brightness(0.5)
         width: 100%
         height: 100%
         object-fit: cover
         object-position: center
 
-    &__button
+    &__button.any-button
         background: #fff
         color: var(--clr-blue)
+
+        @media (width <= 580px)
+            display: block
+            margin-block: min(1em, 1vh)
+            width: max-content
+
+    &__text
+        color: #fff
+        padding-bottom: 4rem
+        font-size: fz1920(12,30)
+        font-weight: 500
+        width: min(500px, 100%)
+
+        @media (width <= 580px)
+            padding-bottom: 4vh
+
+    &__mark
+        color: #fff
+        position: absolute
+        top: 0
+        right: 0
+        display: flex
+        flex-direction: column
+        align-items: flex-end
+        gap: 1.5rem
+
+        @media (width <= 580px)
+            position: static
+            align-items: center
+            gap: 0.5em
+            margin-bottom: 2em
+
+    &__mark-unit
+        font-size: clamp(12px,30 / 1920 * 100vw,30px)
+        padding-right: 0.5rem
+
+        @media (width <= 580px)
+            padding-right: 0
+
+    &__mark-amount
+        font-size: clamp(30px,100 / 1920 * 100vw,100px)
