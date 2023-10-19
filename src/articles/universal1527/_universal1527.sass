@@ -7,11 +7,13 @@
     background: linear-gradient(0deg, rgba(#D9D9D9, .3) 0.01%, rgba(#AAA,.3) 0.96%, rgba(#F2F2F2, .3) 100%)
     min-height: 300px
     img
-        width: min(353px, 20vw)
+        width: 20vw
+        @media (width <= 580px)
+            width: 170px
 
     @media (width <= 580px)
         flex-direction: column
-        min-height: 400px
+        min-height: 420px
         padding-block: 1rem
 
     &__front
@@ -33,6 +35,11 @@
                 .universal1527__front-container
                     width: calc(100% - 2em)
                     transition: height 0.4s 0.4s, width 0.4s
+
+    &__right
+        img
+            @media (width <= 580px)
+                width: 150px
 
     &__front-container
         position: absolute

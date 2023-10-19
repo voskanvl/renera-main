@@ -38,12 +38,18 @@
 
     #mozaic-fourth
         grid-area: fourth
-        background: url("images/mozaic/4.jpg") no-repeat
+        background: url("images/mozaic/4-blur.jpg") no-repeat
         background-size: cover
         color: #000
 
         @media (width <= 768px)
             min-height: 500px
+            background: url("images/mozaic/banner.webp") no-repeat
+            background-size: cover
+            background-position: center
+
+            .mozaic-block__title,.mozaic-block__text
+                color: #fff
 
     #mozaic-fivth
         grid-area: fivth

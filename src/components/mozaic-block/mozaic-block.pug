@@ -1,10 +1,10 @@
-mixin mozaic-block(title,data,bg)
-    a.mozaic-block(style=`background:${bg}`, href="")&attributes(attributes)
+mixin mozaic-block(title,data,bg,href)
+    a.mozaic-block(style=`background:${bg}`)&attributes(attributes)
         .mozaic-block__header
-            h4.mozaic-block__title= title 
+            h4.mozaic-block__title= title
             .mozaic-block__text
-                block 
-        .mozaic-block__footer 
+                block
+        .mozaic-block__footer
             data.mozaic-block__data= data
             .mozaic-block__arrow
                 svg(width="29" height="16" viewBox="0 0 29 16" fill="none" xmlns="http://www.w3.org/2000/svg")

@@ -1,11 +1,21 @@
 allSolutions:
   - caption: Тяговые аккумуляторы для легкового электротранспорта
-    img: "images/all-solutions/car.png"
+    imgDt: "images/all-solutions/car.png"
+    imgMb: "images/all-solutions/car.png"
+    href: https://renera.ru/production/electric-transport/
   - caption: Тяговые батареи для коммерческого электротранспорта
-    img: "images/all-solutions/2.png"
+    imgDt: "images/all-solutions/2.png"
+    imgMb: "images/all-solutions/bus-crop.png"
+    href: https://renera.ru/production/electric-transport/
   - caption: Система оперативного постоянного тока<wbr> (СОПТ)
-    img: "images/all-solutions/sopt.png"
+    imgDt: "images/all-solutions/sopt.png"
+    imgMb: "images/all-solutions/sopt-crop.png"
+    href: https://renera.ru/products/sistemy-operativnogo-postoyannogo-toka-sopt-na-litiy-ionnykh-akkumulyatorakh/
   - caption: СНЭ (системы накопления электроэнергии)<wbr> и ИБП ( источники бесперебойного питания)
-    img: "images/all-solutions/container.png"
+    imgDt: "images/all-solutions/container.png"
+    imgMb: "images/all-solutions/container-crop.png"
+    href: https://renera.ru/production/energy/
   - caption: Тяговые батареи для специальной техники<wbr> (карьерной, погрузочной и пр.)
-    img: "images/all-solutions/5.png"
+    imgDt: "images/all-solutions/5.png"
+    imgMb: "images/all-solutions/спецтехника_1.png"
+    href: https://renera.ru/production/special-equipment/

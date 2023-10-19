@@ -34,6 +34,15 @@
         object-fit: cover
         object-position: center
 
+    &__buttons
+        display: flex
+        align-items: center
+        gap: 0.5rem
+        flex-wrap: wrap
+        @media (width <= 525px)
+            justify-content: center
+            align-items: center
+
     &__button.any-button
         background: #fff
         color: var(--clr-blue)
@@ -48,7 +57,7 @@
         padding-bottom: 4rem
         font-size: fz1920(12,30)
         font-weight: 500
-        width: min(500px, 100%)
+        width: min(770px, 100%)
 
         @media (width <= 580px)
             padding-bottom: 4vh

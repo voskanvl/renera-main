@@ -9,6 +9,7 @@
         width: 60vw
         font-size: fz1920(16,30)
         font-weight: 500
+        overflow-x: hidden
 
         @media (width <= 1024px)
             width: 100%
@@ -31,23 +32,33 @@
                 color: #fff
                 border-color: transparent
 
-            img
+            .all-solutions__img--dt
                 opacity: 1
 
-        img
-            position: absolute
-            opacity: 0
-            transition: opacity 0.4s
-            top: 0
-            right: 0
-            bottom: 0
-            margin-block: auto
-            width: 30vw
-            pointer-events: none
+    &__img--dt
+        position: absolute
+        opacity: 0
+        transition: opacity 0.4s
+        top: 0
+        right: 0
+        bottom: 0
+        margin-block: auto
+        width: 30vw
+        pointer-events: none
 
-            @media (width <= 1024px)
-                position: static
-                opacity: 1
+        @media (width <= 1024px)
+            position: static
+            opacity: 1
+            display: none
+
+    &__img--mb
+        display: none
+        @media (width <= 1024px)
+            display: block
+            height: 100%
+            width: 100%
+            object-fit: cover
+            object-position: 0 50%
 
     &__item
         display: flex

@@ -1,10 +1,11 @@
-.all-solutions.block 
-    .container.all-solutions__container 
+.all-solutions.block
+    .container.all-solutions__container
         h2.title.all-solutions__title ВСЕ РЕШЕНИЯ РЭНЕРА
-        .all-solutions__body 
-            each i,idx in allSolutions 
-                .all-solutions__select(active=idx===0?"true":"false") 
+        .all-solutions__body
+            each i,idx in allSolutions
+                .all-solutions__select(active=idx===0?"true":"false")
                     .all-solutions__item
-                        .all-solutions__caption !{i.caption} 
-                        a.all-solutions__button(href="") ПЕРЕЙТИ 
-                    img(src= i.img, alt="")
+                        .all-solutions__caption !{i.caption}
+                        a.all-solutions__button(href=i.href) ПЕРЕЙТИ
+                    img.all-solutions__img.all-solutions__img--dt(src= i.imgDt, alt="")
+                    img.all-solutions__img.all-solutions__img--mb(src= i.imgMb, alt="")

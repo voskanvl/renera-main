@@ -42,13 +42,16 @@
         a.blue-button
             opacity: 0
             transition: opacity var(--opacity-time)
+            @media (width <= 768px)
+                display: inline-block
+                margin-top: 1rem
 
     &__caption
         font-size: fz1920(16,40)
         font-weight: 500
         text-transform: uppercase
         margin-bottom: min(20px, 2vh)
-
+n
     &__text
         font-size: fz1920(12,20)
         margin-bottom: 48px
@@ -63,3 +66,6 @@
             font-size: inherit
             &::marker
                 content: "— "
+
+        @media (width <= 768px)
+            display: none
