@@ -31,7 +31,7 @@ a:hover
 main.main
     margin-top: var(--header-height)
 
-.container
+.container-main
     padding-inline: 1rem
     width: min(1720px + 2rem, 100% - 2rem )
     margin-inline: auto
@@ -54,9 +54,15 @@ main.main
     text-transform: uppercase
 
 .blue-button
-    @extend .any-button
-    color: #fff
     background: var(--clr-blue)
+    color: #fff
+    text-transform: uppercase
+    padding: 0.9em 2em
+    border-radius: 30px
+    transition: 0.4s
+    font-size: clamp(12px,20 / 1920 * 100vw,20px)
+    font-weight: 500
+    text-decoration: none
     &:hover
         color: #fff
 .block
@@ -73,6 +79,7 @@ button.splide__arrow--prev
     background: #0000 url("images/icons/arrow-left-1.png") no-repeat
     background-size: contain
     border-radius: 0
+    outline: none
     svg
         display: none
 button.splide__arrow--next
@@ -80,8 +87,13 @@ button.splide__arrow--next
     background: #0000 url("images/icons/arrow-right-1.png") no-repeat
     background-size: contain
     border-radius: 0
+    outline: none
     svg
         display: none
+
+button.splide__pagination__page:not(.is-active)
+    background: var(--clr-blue)
+    scale: 1.4 1.4
 
 #submit_your_application
     border-radius: 100px

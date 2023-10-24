@@ -43,21 +43,21 @@
             justify-content: center
             align-items: center
 
-    &__button.any-button
+    &__button.blue-button
         background: #fff
         color: var(--clr-blue)
 
-        @media (width <= 580px)
-            display: block
-            margin-block: min(1em, 1vh)
-            width: max-content
+        // @media (width <= 580px)
+        //     display: block
+        //     margin-block: min(1em, 1vh)
+        //     width: max-content
 
     &__text
         color: #fff
         padding-bottom: 4rem
-        font-size: fz1920(12,30)
+        font-size: fz1920(14,30)
         font-weight: 500
-        width: min(770px, 100%)
+        width: min(640px, 100%)
 
         @media (width <= 580px)
             padding-bottom: 4vh
@@ -87,3 +87,7 @@
 
     &__mark-amount
         font-size: clamp(30px,100 / 1920 * 100vw,100px)
+
+    & video
+        @media (width <= 768px)
+            display: none

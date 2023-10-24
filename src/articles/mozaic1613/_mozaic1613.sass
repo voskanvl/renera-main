@@ -24,8 +24,8 @@
 
         @media (width <= 500px)
             grid-template-columns: 100%
-            grid-template-rows: repeat(8, min-content)
-            grid-template-areas: "first" "second" "third" "fourth" "fourth" "fivth" "sixth" "seventh"
+            grid-template-rows: repeat(7, min-content)
+            grid-template-areas: "first" "second" "third" "fourth" "fivth" "sixth" "seventh"
 
     #mozaic-first
         grid-area: first
@@ -38,18 +38,21 @@
 
     #mozaic-fourth
         grid-area: fourth
-        background: url("images/mozaic/4-blur.jpg") no-repeat
+        background: url("images/mozaic/4.jpg") no-repeat
         background-size: cover
-        color: #000
+        color: #fff
+
+        .mozaic-block__header
+            translate: 0
 
         @media (width <= 768px)
-            min-height: 500px
+            min-height: 206px
             background: url("images/mozaic/banner.webp") no-repeat
             background-size: cover
             background-position: center
 
-            .mozaic-block__title,.mozaic-block__text
-                color: #fff
+            .mozaic-block__filter
+                background: linear-gradient(#025EA1A0 , transparent 100%)
 
     #mozaic-fivth
         grid-area: fivth
@@ -66,6 +69,7 @@
     &__item
         color: inherit
         text-decoration: none
+        position: relative
         &--first
             img
                 width: 100%

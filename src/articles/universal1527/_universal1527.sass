@@ -16,25 +16,30 @@
         min-height: 420px
         padding-block: 1rem
 
+        .universal1527__text
+            display: none
+        .blue-button.universal1527__button
+            grid-template-rows: 1fr
+        .universal1527__front-container
+            height: 50%
+
     &__front
         position: absolute
         inset: 0
         background: #0000
 
-        &:hover
-            // backdrop-filter: blur(4px)
-            .universal1527__front-container
-                height: 50%
-            .universal1527__text
-                grid-template-rows: 1fr
-            .blue-button.universal1527__button
-                grid-template-rows: 1fr
-                padding: 1vmin 2vmin
 
-            @media (width <= 425px)
-                .universal1527__front-container
-                    width: calc(100% - 2em)
-                    transition: height 0.4s 0.4s, width 0.4s
+        .universal1527__front-container
+            height: 50%
+        .universal1527__text
+            grid-template-rows: 1fr
+        .blue-button.universal1527__button
+            grid-template-rows: 1fr
+
+    @media (width <= 580px)
+        .universal1527__front-container
+            width: calc(84% - 2em)
+            transition: height 0.4s 0.4s, width 0.4s
 
     &__right
         img
@@ -74,7 +79,6 @@
         width: max-content
         margin-inline: auto
         display: grid
-        padding: 0
         grid-template-rows: 0fr
         transition: grid-template-rows 0.4s
 

@@ -4,11 +4,13 @@ export default function popular() {
 
     blockLeft &&
         blockLeft.addEventListener("mouseover", () => {
+            if (matchMedia("(max-width: 768px").matches) return
             blockRight && blockRight.removeAttribute("active")
             blockLeft.setAttribute("active", "active")
         })
     blockRight &&
         blockRight.addEventListener("mouseover", () => {
+            if (matchMedia("(max-width: 768px").matches) return
             blockLeft && blockLeft.removeAttribute("active")
             blockRight.setAttribute("active", "active")
         })

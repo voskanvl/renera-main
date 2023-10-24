@@ -1,7 +1,7 @@
 allSolutions:
   - caption: Тяговые аккумуляторы для легкового электротранспорта
     imgDt: "images/all-solutions/car.png"
-    imgMb: "images/all-solutions/car.png"
+    imgMb: "images/all-solutions/car-crop.png"
     href: https://renera.ru/production/electric-transport/
   - caption: Тяговые батареи для коммерческого электротранспорта
     imgDt: "images/all-solutions/2.png"
